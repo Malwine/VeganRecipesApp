@@ -29,6 +29,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Use Compass to supercharge SCSS
+#gem "compass", "~> 0.12.2"
+# Use Twitter's finest Bootstap, for SCSS of course
+gem "bootstrap-sass", '~> 3.0'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
