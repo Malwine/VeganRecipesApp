@@ -1,5 +1,5 @@
 == README
 
-Railsgirls project by Malwine and Roxana.
+Railsgirls project by Malwine and Roxana coached by Til.
 
-It's a blog for vegan recipes.
+It's the second version of a blog for vegan recipes.
