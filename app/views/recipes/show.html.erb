@@ -2,7 +2,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @recipe.picture %>
+  <%= image_tag(@recipe.picture_url, :width => 500) if @recipe.picture.present? %>
 </p>
 
 <p>
