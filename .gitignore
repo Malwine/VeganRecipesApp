@@ -14,3 +14,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+public/uploads/*
+
+# Mac finder artifacts
+.DS_Store
+
+# Emacs artifacts
+*~
+
