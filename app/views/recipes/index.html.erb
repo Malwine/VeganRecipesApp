@@ -1,14 +1,11 @@
-<h1>All recipes</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th></th>
+      <th>All recipes</th>
       <th>Name</th>
       <th>Comment</th>
-      <th></th>
-      <th></th>
-      <th></th>
+    
     </tr>
   </thead>
 
@@ -18,7 +15,7 @@
         <td><%= image_tag(recipe.picture_url, :width => 300) if recipe.picture.present?%></td>
         <td><%= recipe.name %></td>
         <td><%= recipe.comment %></td>
-        <td><%= link_to 'Show', recipe %></td>
+        <td><%= link_to 'Show', recipe, class:"btn btn-success"  %></td>
       </tr>
     <% end %>
   </tbody>
