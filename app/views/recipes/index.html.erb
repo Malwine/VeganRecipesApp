@@ -23,4 +23,6 @@
 
 <br>
 
+<% if user_signed_in? then %>
 <%= link_to 'New Recipe', new_recipe_path, class:"btn btn-success" %>
+<% end %>
