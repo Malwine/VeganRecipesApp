@@ -1,4 +1,5 @@
 VeganRecipesApp::Application.routes.draw do
+  devise_for :users
   get "pages/info"
   resources :recipes
   root :to => redirect('/recipes')
