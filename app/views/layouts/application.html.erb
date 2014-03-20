@@ -19,12 +19,17 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="/">Vegan On The Rocks</a>
+      <%= link_to("Vegan On The Rocks", root_path, {class: "navbar-brand"}) %>
     </div>
+
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="<%= 'active' if params[:controller] == 'recipes' %>"> <a href="/recipes">Recipes</a></li>
-        <li ><a href="/pages/info">About</a></li>
+        <li class="<%= 'active' if params[:controller] == 'recipes' %>">
+          <%= link_to "Recipes", recipes_path %>
+        </li>
+        <li >
+          <%= link_to "About", pages_info_path %>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? then %>
